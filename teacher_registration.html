@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Teacher Registration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="registration-form">
+                    <h1 class="text-center">Teacher Registration</h1>
+                    <form action="login.html" method="POST">
+                        <div class="mb-3">
+                            <label for="full_name" class="form-label">Full Name:</label>
+                            <input type="text" id="full_name" name="full_name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Recent Photo:</label>
+                            <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+                            <small class="form-text text-muted">Allowed image dimensions: 300x300 pixels.</small>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="male" value="Male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="gender" id="female" value="Female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="age" class="form-label">Age:</label>
+                                    <input type="number" id="age" name="age" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail Address:</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact" class="form-label">Contact:</label>
+                            <input type="tel" id="contact" name="contact" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address:</label>
+                            <input type="text" id="address" name="address" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address2" class="form-label">Street Address Line 2:</label>
+                            <input type="text" id="address2" name="address2" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="city" class="form-label">City:</label>
+                                    <input type="text" id="city" name="city" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="state" class="form-label">State / Province:</label>
+                                    <input type="text" id="state" name="state" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="zip" class="form-label">Postal / Zip Code:</label>
+                            <input type="text" id="zip" name="zip" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="qualification" class="form-label">Qualification:</label>
+                            <input type="text" id="qualification" name="qualification" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="teaching_area" class="form-label">Your Preferable Teaching Area:</label>
+                            <input type="text" id="teaching_area" name="teaching_area" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="classes_taught" class="form-label">Classes You Can Teach:</label>
+                            <input type="text" id="classes_taught" name="classes_taught" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subjects_taught" class="form-label">Subjects You Can Teach:</label>
+                            <input type="text" id="subjects_taught" name="subjects_taught" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="teaching_experience" class="form-label">Any Experience of Teaching:</label>
+                            <textarea id="teaching_experience" name="teaching_experience" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="additional_comments" class="form-label">Additional Comments:</label>
+                            <textarea id="additional_comments" name="additional_comments" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
